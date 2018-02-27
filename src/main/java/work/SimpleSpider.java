@@ -13,7 +13,6 @@ import org.apache.http.impl.client.HttpClients;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.*;
 
 /**
  * 1024图片简单爬虫
