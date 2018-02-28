@@ -31,7 +31,7 @@ public class ImageCreator implements Runnable {
         File dir = new File(basePath + title);
         if (!dir.exists()) {
             dir.mkdirs();
-            System.out.println("图片存放于" + basePath + title + "目录下");
+            //System.out.println("图片存放于" + basePath + title + "目录下");
         }
         String imageName = imageUrl.substring(imageUrl.lastIndexOf("/") + 1);
         try {
@@ -64,8 +64,7 @@ public class ImageCreator implements Runnable {
                         os.write(temp);
                     }
                     count = count + 1;
-                    System.out.println("第" + count + "张妹子:"
-                            + file.getAbsolutePath());
+                    //System.out.println("第" + count + "张妹子:" + file.getAbsolutePath());
                 }
             } catch (Exception e) {
                 e.printStackTrace();

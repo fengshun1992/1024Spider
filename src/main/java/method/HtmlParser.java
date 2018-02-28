@@ -27,10 +27,11 @@ public class HtmlParser implements Runnable {
 
         if (m.find()) {
             title = m.group(1);
+            /*System.out.println(title);
             title = title.replace(" ", "").replace("，", "").replace("、", "").replace("。", "");
             if (title.length() >= 30) {
                 title = title.substring(30);
-            }
+            }*/
             System.out.println(title);
         }
         m = IMGURL_PATTERN.matcher(html);
