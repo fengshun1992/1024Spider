@@ -11,6 +11,7 @@ public class HtmlParser implements Runnable {
 
     // Use precompile
     private static Pattern TITLE_PATTERN = Pattern.compile("<title>(.*?)\\|");
+    //private static Pattern TITLE_PATTERN = Pattern.compile("<title>(?<title>.*)</title>");
     private static Pattern IMGURL_PATTERN = Pattern.compile("<img src=\"(http.*?)\"");
 
     public HtmlParser(String html, int no) {
